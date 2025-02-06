@@ -5,6 +5,8 @@ export interface Product {
   }
   
   export interface PricingRule {
+    canApply(items: Product[]): boolean;
     apply(items: Product[]): number;
   }
+  
   
